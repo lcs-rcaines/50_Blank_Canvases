@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
 /*:
  ## Add your code below
@@ -23,8 +23,21 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-
-
+for x in stride(from: 0, through: 400, by: 100){
+    for y in stride(from: 0, through: 400, by: 200){
+        canvas.fillColor = Color.white
+        canvas.borderColor = Color.purple
+        canvas.defaultBorderWidth
+        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 75, height: 75)
+        for x in stride(from: 50, through: 500, by: 100){
+            for y in stride(from: 100, through: 500, by: 200){
+                canvas.fillColor = Color.white
+                canvas.borderColor = Color.red
+                canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 75, height: 75)
+            }
+        }
+    }
+}
 
 /*:
  ## Use source control

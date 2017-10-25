@@ -13,7 +13,8 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 1400, height: 900)
+
 
 /*:
  ## Add your code below
@@ -23,7 +24,11 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-
+for x in stride(from: 0, through: 1200, by: 400){
+    for y in stride(from: 100, through: 1300, by: 400){
+        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 20, height: 20)
+    }
+}
 
 
 /*:

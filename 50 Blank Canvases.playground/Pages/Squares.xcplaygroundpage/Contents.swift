@@ -23,7 +23,27 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
+canvas.fillColor = Color.black
 
+for x in stride(from: 0, through: 370, by: 30){
+    for y in stride(from: 50, through: 380, by: 30){
+        // decide what color to use
+        if y % 50 == 0 {  // divide by 50 and get remainder
+                          // when remainder is zero (50 / 50)
+                          // make the colour orange
+            canvas.fillColor = Color.yellow
+        } else if y % 80 == 0 {
+            canvas.fillColor = Color.green
+        } else if y % 110 == 0 {
+            canvas.fillColor = Color.purple
+        } else if y % 140 == 0 {
+            canvas.fillColor = Color.orange
+        }
+        
+        
+        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 26, height: 26)
+    }
+}
 
 
 /*:
