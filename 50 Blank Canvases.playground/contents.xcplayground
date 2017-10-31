@@ -2,7 +2,7 @@
 <playground version='6.0' target-platform='macos' display-mode='rendered' executeOnSourceChanges='false'>
     <pages>
         <page name='Squares'/>
-        <page name='Canvas 2'/>
+        <page name='CIrcles'/>
         <page name='Canvas 3'/>
         <page name='Canvas 4'/>
         <page name='Canvas 5'/>

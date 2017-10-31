@@ -41,7 +41,7 @@ for x in stride(from: 0, through: 370, by: 30){
         }
         
         
-        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 26, height: 26)
+        canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 31, height: 31)
     }
 }
 
