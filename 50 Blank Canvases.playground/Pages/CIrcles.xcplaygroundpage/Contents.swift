@@ -35,14 +35,22 @@ for i in stride(from: 1, through: 18, by: 1){
     canvas.drawEllipse(centreX: 0, centreY: 100, width: 200, height: 200)
     canvas.rotate(by: 20)
 }
+canvas.borderColor = Color.red
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 140, height: 140, borderWidth: 5)
+canvas.borderColor = Color.black
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 200, height: 200, borderWidth: 5)
+canvas.borderColor = Color.red
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 260, height: 260, borderWidth: 5)
+canvas.borderColor = Color.black
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 310, height: 310, borderWidth: 5)
+canvas.borderColor = Color.red
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 350, height: 350, borderWidth: 5)
+canvas.borderColor = Color.black
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 375, height: 375, borderWidth: 5)
+canvas.borderColor = Color.red
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 400, height: 400, borderWidth: 7)
-canvas.drawEllipse(centreX: 0, centreY: 0, width: 80, height: 80, borderWidth: 5)
+canvas.borderColor = Color.black
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 80, height: 80, borderWidth: 10)
 
 canvas.drawShapesWithFill = true
 
